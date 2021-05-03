@@ -7,6 +7,7 @@ body {
 img {
     border-radius: 5%;
     width: 60%;
+    height: auto;
 }
 
 h1 {
@@ -14,21 +15,29 @@ h1 {
     font-size: 30px;
 }
 
-p {
-    font-size: 20px;
-    color: #000000;
-}
 
-.menu {
-    list-style: none;
-    font-family: cursive;
-    float: right;
-    top: 10px;
-    right: 30px;
-    cursor: pointer;
-    color: black;
-}
 
 #myname {
     font-family: 'Courgette', cursive;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.carousel-inner > .item > img {
+  width: 50%;
+  margin: auto;
+  resize: both;
 }
